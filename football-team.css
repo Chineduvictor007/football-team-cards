@@ -1,0 +1,144 @@
+/* Reset and General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #6e6e6e;
+    text-align: center;
+    padding: 20px;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+/* Title */
+.title {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Team Stats Section */
+.teamstats {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+    margin: 0 auto 20px;
+    max-width: 90%;
+}
+
+.teamstats p {
+    font-size: 1rem;
+    margin: 5px 0;
+    width: 100%;
+    display: flex;
+}
+
+span {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Dropdown Styling */
+.optionsLabel {
+    font-size: 1.2rem;
+    margin-left: 10px;
+    /* font-weight: bolder; */
+    color: #ffffff;
+}
+
+
+
+.playerDropdownList {
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
+    width: 90%;
+    max-width: 300px;
+    margin-top: 10px;
+}
+
+
+/* Player Cards Section */
+.playersCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.player-card {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.player-card:hover {
+    transform: scale(1.05);
+}
+
+.player-card h2 {
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.player-card p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* ✅ Responsive Design: Small Phones (360px - 480px) */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .teamstats {
+        flex-direction: column; /* Stack stats vertically */
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .teamstats p {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    .playersCards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .player-card {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .playerDropdownList {
+        width: 100%;
+    }
+    .optionsLabel {
+        font-size: 1.5rem;
+        margin-left: 10px;
+        color: #ffffff;
+
+    }
+}

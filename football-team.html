@@ -1,0 +1,36 @@
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>football-team-cards</title>
+    <link rel="stylesheet" href="football-team.css">
+</head>
+
+<body>
+    <h1 class="title">Team Stats</h1>
+    <main>
+        <div class="teamstats">
+            <p>Team: <span id="team"></span></p>
+            <p>Sport: <span id="sport"></span></p>
+            <p>Year:<span id="year"></span></p>
+            <p>Head Coach: <span id="coachName"></span></p>
+        </div>
+
+        <label for="player1" class="optionsLabel">Filter Teammates:</label>
+        <select name="player1" id="player1" class="playerDropdownList">
+            <option value="All">All Players</option>
+            <option value="nickname">Nickname</option>
+            <option value="forward">Position Forward</option>
+            <option value="midfielder">Position Midfielder</option>
+            <option value="defender">Position Defender</option>
+            <option value="goalkeeper">Position Goalkeeper</option>
+        </select>
+
+        <div class="playersCards" id="players"></div>
+    </main>
+   <script src="fooball.js"></script>
+</body>
+</html>
